@@ -17,9 +17,6 @@ ecommerceApp.config(['$routeProvider',
         templateUrl: 'partials/home.html',
         controller: 'CarouselCtrl'
       }).
-      when('/contact', {
-        templateUrl: 'partials/contact.html'
-      }).
       when('/items', {
         templateUrl: 'partials/item-list.html',
         controller: 'ItemListCtrl'
@@ -27,6 +24,12 @@ ecommerceApp.config(['$routeProvider',
       when('/items/:itemId', {
         templateUrl: 'partials/item-detail.html',
         controller: 'ItemDetailCtrl'
+      }).
+      when('/contact/contact1', {
+        templateUrl: 'partials/contact.html'
+      }).
+      when('/contact/contact2', {
+        templateUrl: 'partials/contact2.html'
       }).
       otherwise({
         templateUrl: 'partials/home.html',

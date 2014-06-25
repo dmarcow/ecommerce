@@ -1,0 +1,32 @@
+[
+  {
+    "id"    : 0,
+    "href"  : "#/home",
+    "label" : "Home",
+    "sub"   : false
+  },
+  {
+    "id"    : 1,
+    "href"  : "#/items",
+    "label" : "Items",
+    "sub"   : false
+  },
+  {
+    "id"    : 2,
+    "href"  : "#/contact",
+    "label" : "Contact",
+    "sub"   : [
+          {
+            "id": 0,
+            "href"  : "#/contact/contact1",
+            "label" : "Sub Contact 1",
+            "sub"   : false
+          },
+          {
+            "id": 1,
+            "href"  : "#/contact/contact2",
+            "label" : "Sub Contact 2",
+            "sub"   : false
+          }]
+  }
+]

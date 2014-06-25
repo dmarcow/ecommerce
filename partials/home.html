@@ -5,24 +5,29 @@
     <slide ng-repeat="slide in slides" active="slide.active">
       <img ng-src="{{slide.image}}" style="margin:auto;">
       <div class="carousel-caption">
-        <p><a href="#/items/{{slide.id}}">{{slide.text}}</a></p>
+        <p><a href="#/items/{{slide.itemId}}">{{slide.text}}</a></p>
       </div>
     </slide>
   </carousel>
 </div>
 
-<hr />
+<br />
 
-<!-- Thumbnails -->
-<div class="row" ng-controller="ThumbnailCtrl">
-  <div class="col-sm-6 col-md-4" ng-repeat="thumb in thumbs">
-    <div class="thumbnail">
-      <img ng-src="{{thumb.image}}">
-      <div class="caption">
-        <h3>{{thumb.text}}</h3>
-        <p>{{thumb.text}}</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+<!-- Container -->
+<div class="container">
+
+  <!-- Thumbnails -->
+  <div class="row" ng-controller="ThumbnailCtrl">
+    <div class="col-sm-6 col-md-4" ng-repeat="thumb in thumbs">
+      <div class="thumbnail">
+        <img ng-src="{{thumb.image}}">
+        <div class="caption">
+          <h3>{{thumb.text}}</h3>
+          <p>{{thumb.text}}</p>
+          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
       </div>
     </div>
   </div>
+
 </div>
